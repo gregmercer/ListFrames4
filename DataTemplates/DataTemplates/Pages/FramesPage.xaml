@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:w="clr-namespace:DataTemplates.Views;assembly=DataTemplates"
+    x:Class="DataTemplates.Pages.FramesPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="wrapTemplate">
+                <Frame OutlineColor = "Green"
+                    VerticalOptions = "Start"
+                    HorizontalOptions = "Fill"
+                    BackgroundColor = "White"
+                    HasShadow = "false"
+                    Padding = "10, 10, 10, 10"
+                    Margin = "0, 3, 0, 0" >
+                    <Label Text="{Binding StartTime}"/>
+                </Frame>
+            </DataTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ListView ItemsSource="{Binding Rooms}" HasUnevenRows="true" BackgroundColor="White">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout BackgroundColor="White">
+                        <Label Text="{Binding Name}"></Label>
+                        <w:RepeatableWrapLayout ItemTapCommand="{Binding TapCommand}" ItemsSource="{Binding TimeSlots}" 
+                                BackgroundColor="White" Padding="0" Margin="4" ItemTemplate="{StaticResource wrapTemplate}"
+                                Spacing="3">
+                        </w:RepeatableWrapLayout>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+    
+</ContentPage>
