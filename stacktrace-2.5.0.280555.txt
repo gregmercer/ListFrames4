@@ -1,0 +1,28 @@
+  at System.ThrowHelper.ThrowArgumentOutOfRangeException (System.ExceptionArgument argument, System.ExceptionResource resource) [0x00018] in /Library/Frameworks/Xamarin.iOS.framework/Versions/11.2.1.0/src/mono/mcs/class/referencesource/mscorlib/system/throwhelper.cs:93 
+  at System.ThrowHelper.ThrowArgumentOutOfRangeException () [0x00000] in /Library/Frameworks/Xamarin.iOS.framework/Versions/11.2.1.0/src/mono/mcs/class/referencesource/mscorlib/system/throwhelper.cs:56 
+  at System.Collections.Generic.List`1[T].get_Item (System.Int32 index) [0x00009] in <7b5faf4072934b65b9f50c81038269d3>:0 
+  at System.Collections.ObjectModel.Collection`1[T].get_Item (System.Int32 index) [0x00000] in <7b5faf4072934b65b9f50c81038269d3>:0 
+  at System.Collections.ObjectModel.ReadOnlyCollection`1[T].get_Item (System.Int32 index) [0x00000] in <7b5faf4072934b65b9f50c81038269d3>:0 
+  at Xamarin.Forms.Platform.iOS.RendererPool.UpdateRenderers (Xamarin.Forms.Element newElement) [0x00054] in <bc5a3d4303744676b3b36f4254bb697d>:0 
+  at Xamarin.Forms.Platform.iOS.RendererPool.UpdateNewElement (Xamarin.Forms.VisualElement newElement) [0x00080] in <bc5a3d4303744676b3b36f4254bb697d>:0 
+  at Xamarin.Forms.Platform.iOS.VisualElementPackager.SetElement (Xamarin.Forms.VisualElement oldElement, Xamarin.Forms.VisualElement newElement) [0x00050] in <bc5a3d4303744676b3b36f4254bb697d>:0 
+  at Xamarin.Forms.Platform.iOS.VisualElementPackager.OnRendererElementChanged (System.Object sender, Xamarin.Forms.Platform.iOS.VisualElementChangedEventArgs args) [0x0001c] in <bc5a3d4303744676b3b36f4254bb697d>:0 
+  at Xamarin.Forms.Platform.iOS.VisualElementRenderer`1[TElement].OnElementChanged (Xamarin.Forms.Platform.iOS.ElementChangedEventArgs`1[TElement] e) [0x0002c] in <bc5a3d4303744676b3b36f4254bb697d>:0 
+  at Xamarin.Forms.Platform.iOS.VisualElementRenderer`1[TElement].SetElement (TElement element) [0x00118] in <bc5a3d4303744676b3b36f4254bb697d>:0 
+  at Xamarin.Forms.Platform.iOS.VisualElementRenderer`1[TElement].Xamarin.Forms.Platform.iOS.IVisualElementRenderer.SetElement (Xamarin.Forms.VisualElement element) [0x00000] in <bc5a3d4303744676b3b36f4254bb697d>:0 
+  at Xamarin.Forms.Platform.iOS.RendererPool.UpdateRenderers (Xamarin.Forms.Element newElement) [0x0008c] in <bc5a3d4303744676b3b36f4254bb697d>:0 
+  at Xamarin.Forms.Platform.iOS.RendererPool.UpdateNewElement (Xamarin.Forms.VisualElement newElement) [0x00080] in <bc5a3d4303744676b3b36f4254bb697d>:0 
+  at Xamarin.Forms.Platform.iOS.VisualElementPackager.SetElement (Xamarin.Forms.VisualElement oldElement, Xamarin.Forms.VisualElement newElement) [0x00050] in <bc5a3d4303744676b3b36f4254bb697d>:0 
+  at Xamarin.Forms.Platform.iOS.VisualElementPackager.OnRendererElementChanged (System.Object sender, Xamarin.Forms.Platform.iOS.VisualElementChangedEventArgs args) [0x0001c] in <bc5a3d4303744676b3b36f4254bb697d>:0 
+  at Xamarin.Forms.Platform.iOS.VisualElementRenderer`1[TElement].OnElementChanged (Xamarin.Forms.Platform.iOS.ElementChangedEventArgs`1[TElement] e) [0x0002c] in <bc5a3d4303744676b3b36f4254bb697d>:0 
+  at Xamarin.Forms.Platform.iOS.VisualElementRenderer`1[TElement].SetElement (TElement element) [0x00118] in <bc5a3d4303744676b3b36f4254bb697d>:0 
+  at Xamarin.Forms.Platform.iOS.VisualElementRenderer`1[TElement].Xamarin.Forms.Platform.iOS.IVisualElementRenderer.SetElement (Xamarin.Forms.VisualElement element) [0x00000] in <bc5a3d4303744676b3b36f4254bb697d>:0 
+  at Xamarin.Forms.Platform.iOS.ViewCellRenderer+ViewTableCell.UpdateCell (Xamarin.Forms.ViewCell cell) [0x000e5] in <bc5a3d4303744676b3b36f4254bb697d>:0 
+  at Xamarin.Forms.Platform.iOS.ViewCellRenderer+ViewTableCell.set_ViewCell (Xamarin.Forms.ViewCell value) [0x0000a] in <bc5a3d4303744676b3b36f4254bb697d>:0 
+  at Xamarin.Forms.Platform.iOS.ViewCellRenderer.GetCell (Xamarin.Forms.Cell item, UIKit.UITableViewCell reusableCell, UIKit.UITableView tv) [0x0004d] in <bc5a3d4303744676b3b36f4254bb697d>:0 
+  at Xamarin.Forms.Platform.iOS.CellTableViewCell.GetNativeCell (UIKit.UITableView tableView, Xamarin.Forms.Cell cell, System.Boolean recycleCells, System.String templateId) [0x00080] in <bc5a3d4303744676b3b36f4254bb697d>:0 
+  at Xamarin.Forms.Platform.iOS.ListViewRenderer+ListViewDataSource.GetCell (UIKit.UITableView tableView, Foundation.NSIndexPath indexPath) [0x00017] in <bc5a3d4303744676b3b36f4254bb697d>:0 
+  at (wrapper managed-to-native) UIKit.UIApplication:UIApplicationMain (int,string[],intptr,intptr)
+  at UIKit.UIApplication.Main (System.String[] args, System.IntPtr principal, System.IntPtr delegate) [0x00005] in /Users/builder/data/lanes/5481/12e80e01/source/xamarin-macios/src/UIKit/UIApplication.cs:79 
+  at UIKit.UIApplication.Main (System.String[] args, System.String principalClassName, System.String delegateClassName) [0x00038] in /Users/builder/data/lanes/5481/12e80e01/source/xamarin-macios/src/UIKit/UIApplication.cs:63 
+  at DataTemplates.iOS.Application.Main (System.String[] args) [0x00001] in /Users/gregmercer/Desktop/gsbgo/Greg/github/ListFrames4/DataTemplates/iOS/Main.cs:17 
